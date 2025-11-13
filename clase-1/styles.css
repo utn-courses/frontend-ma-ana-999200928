@@ -1,0 +1,29 @@
+/* estilos para el body, centra el botón */
+body {
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+button {
+  border: none;
+  padding: 8px 12px;
+  border-radius: 12px;
+  color: white;
+  background-color: yellowgreen;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(115, 154, 38);
+}
+
+.claro {
+  background-color: blue;
+}
+
+.oscuro {
+  background-color: sienna;
+}

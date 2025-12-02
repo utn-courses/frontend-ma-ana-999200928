@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Overpass", sans-serif;
+}
+
+body {
+  background-color: hsl(216, 12%, 8%);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container-card {
+  background-color: hsl(213, 19%, 18%);
+  width: 350px;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+img {
+  background-color: hsl(214, 13%, 24%);
+  padding: 10px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-weight: 800;
+}
+
+p {
+  font-size: 14px;
+  color: gray;
+  margin: 10px 0;
+}
+
+form ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.feedback-input {
+  background-color: hsl(214, 13%, 24%);
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  color: gray;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.feedback-input:hover {
+  background-color: hsl(25, 97%, 53%);
+  color: white;
+}
+
+.feedback-input:focus {
+  background-color: white;
+  color: black;
+}
+
+button[type="submit"] {
+  background-color: hsl(25, 97%, 53%);
+  width: 100%;
+  margin-top: 20px;
+  padding: 8px 0;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: white;
+}

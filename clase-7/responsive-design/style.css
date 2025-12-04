@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: yellowgreen;
+  padding: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.content-mobile {
+  display: none;
+}
+
+/* media query para tablet */
+@media (max-width: 880px) {
+  .container {
+    background-color: gold;
+    color: black;
+    border: 2px solid darkgoldenrod;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+}
+
+/* media query */
+/* mientras el ancho de la pantalla tenga 480px como máximo incorporá los siguientes estilos */
+@media (max-width: 480px) {
+  .content-pc {
+    display: none;
+  }
+
+  .content-mobile {
+    display: block;
+  }
+
+  .container {
+    background-color: green;
+    color: white;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+}

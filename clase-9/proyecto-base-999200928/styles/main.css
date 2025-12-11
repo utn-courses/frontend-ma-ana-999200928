@@ -1,0 +1,285 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--primary-font);
+}
+
+:root {
+  --primary-color: #0a9c6f;
+  --grey-900: #0d1919;
+  --grey-800: #121b22;
+  --grey-600: #1f2c34;
+  --grey-700: #9f9fa1;
+  --grey-500: #dfdfe1;
+  --grey-300: #fefff6;
+  --grey-200: #f1f2f6;
+  --green-400: #138b80;
+  --green-300: #2dca7a;
+  --green-100: #dcf8c6;
+  --primary-font: "Roboto", sans-serif;
+}
+
+body {
+  background-color: var(--primary-color);
+  padding: 40px;
+}
+
+.app {
+  max-width: 1100px;
+  margin: auto;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  height: 90vh;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+}
+
+/* aside styles */
+
+aside {
+  background-color: var(--grey-900);
+  color: white;
+}
+
+aside header {
+  background-color: var(--grey-800);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 10px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile img {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.profile h2 {
+  font-size: 22px;
+}
+
+.actions {
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+}
+
+.actions button {
+  padding: 7px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: var(--grey-800);
+  color: var(--grey-300);
+  transition: transform .2s;
+}
+
+.actions button svg {
+  width: 20px;
+}
+
+.actions button:hover {
+  background-color: var(--grey-700);
+  transform: translateY(-4px);
+}
+
+/* search input */
+.search {
+  background-color: var(--grey-800);
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  padding: 10px;
+}
+
+.search form input {
+  background-color: var(--grey-700);
+  width: 100%;
+  display: block;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  outline: none;
+  color: white;
+}
+
+.search input:focus {
+  outline: 1px solid var(--grey-300);
+}
+
+.chats ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.user-chat {
+  background-color: var(--grey-900);
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-chat img {
+  border-radius: 50%;
+  width: 50px;
+}
+
+.user-chat:hover {
+  background-color: var(--grey-700);
+  cursor: pointer;
+  border-left: 3px solid var(--green-400);
+}
+
+/* messages panel */
+
+.chat-header {
+  background-color: var(--grey-300);
+  border-bottom: 1px solid var(--grey-500);
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  gap: 10px;
+}
+
+.chat-header img {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.chat-header p {
+  color: var(--grey-700);
+}
+
+/* messages styles */
+
+.chat-panel {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.messages {
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow-y: auto;
+}
+
+
+.message {
+  background-color: var(--grey-300);
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.238);
+  padding: 10px;
+  width: 60%;
+}
+
+.message .time {
+  color: var(--grey-700);
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: end;
+}
+
+.me {
+  align-self: end;
+  background-color: var(--green-100);
+}
+
+/* footer styles */
+
+footer {
+  display: flex;
+  background-color: var(--grey-500);
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+}
+
+footer button {
+  width: 25px;
+  height: 25px;
+  padding: 3px;
+}
+
+footer svg {
+  width: 100%;
+  height: 100%;
+}
+
+footer .attach {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--grey-700);
+  transition: color .2s;
+}
+
+footer .attach:hover {
+  color: var(--grey-800);
+}
+
+footer form {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+footer textarea {
+  padding: 8px;
+  resize: none;
+  border-radius: 15px;
+  width: 100%;
+  border: none;
+}
+
+footer textarea:focus {
+  outline: 1px solid var(--grey-700);
+  border: none;
+}
+
+footer .send {
+  background-color: #2dca7a;
+  border: none;
+  color: var(--grey-300);
+  width: 45px;
+  height: 30px;
+  border-radius: 20px;
+  padding: 5px;
+  cursor: pointer;
+  transition: all .1s;
+}
+
+footer .send:hover {
+  background-color: #138b80;
+  transform: scale(0.98);
+}
+
+/* responsive desing */
+@media (max-width:880px) {
+  .app {
+    grid-template-columns: 1fr;
+  }
+
+  aside {
+    display: none;
+  }
+}

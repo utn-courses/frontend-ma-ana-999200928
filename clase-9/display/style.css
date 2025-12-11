@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+  display: inline;
+  background-color: yellowgreen;
+}
+
+button {
+  display: block;
+}
+
+/* diplay -> block, inline, inline-block, flex, grid */
+
+button {
+  display: none;
+}
+
+p {
+  display: block;
+}
+
+div {
+  /* display: flex; */
+  justify-content: end;
+  align-items: center;
+  background-color: violet;
+  height: 300px;
+}

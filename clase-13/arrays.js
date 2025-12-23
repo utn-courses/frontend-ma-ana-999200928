@@ -73,3 +73,4 @@ console.log(ultimoAlumno)
 if (!colores.includes("rosado")) {
   console.log("No incluye a rosado")
 }
+

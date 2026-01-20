@@ -31,7 +31,7 @@ const fetchingData = async () => {
 
 const fetchingSpellsData = async () => {
   try {
-    const response = await fetch("https://wizard-world-api.herokuapp.com/spells")
+    const response = await fetch("https://wizard-world-api.herokuapp.com/spells", { method: "GET" })
     const data = await response.json()
     console.log(data)
     data.forEach((spell) => {

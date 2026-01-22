@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 900px;
+  margin: 30px auto;
+}
+
+.university {
+  background-color: wheat;
+  padding: 10px;
+  border-radius: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.university h2,
+.university p {
+  margin-bottom: 10px;
+}
+
+.university a {
+  display: block;
+  background-color: rgb(162, 114, 162);
+  text-align: center;
+  margin-top: 10px;
+  text-decoration: none;
+  color: white;
+  padding: 8px;
+  border-radius: 10px;
+  transition: all .2s;
+}
+
+.university a:hover {
+  color: rgb(162, 114, 162);
+  background-color: white;
+}

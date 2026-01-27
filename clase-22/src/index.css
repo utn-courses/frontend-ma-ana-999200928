@@ -1,0 +1,13 @@
+.me {
+  text-align: end;
+}
+
+.mensaje {
+  background-color: teal;
+  color: white;
+}
+
+.mensaje.me {
+  background-color: yellowgreen;
+  color: black;
+}

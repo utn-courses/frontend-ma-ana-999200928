@@ -5,8 +5,30 @@ const Saludo = ({ nombre, apellido }) => {
   )
 }
 
+const SaludoEjercicio = ({ esMañana, nombre }) => {
+  return (
+    esMañana === true ? <p>Buenos días, {nombre}</p> : <p>Buenas tardes, {nombre}</p>
+  )
+}
+
 // export por defecto
 // export default Saludo
 
 // export nombrado
-export { Saludo }
+export { Saludo, SaludoEjercicio }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

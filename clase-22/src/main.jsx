@@ -1,6 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import { Saludo } from './components/Saludo.jsx'
+import { Saludo, SaludoEjercicio } from './components/Saludo.jsx'
 import { Mensaje } from "./components/Mensaje.jsx"
 import { TarjetaDePresentacion2 } from './components/TarjetaDePresentacion.jsx'
 import './index.css'
@@ -30,5 +30,6 @@ createRoot(document.getElementById('root')).render(
     <Mensaje text={"ok nos vemos despues"} send={"me"} time={new Date().toLocaleString()} /> */}
     <hr />
     <TarjetaDePresentacion2 />
+    <SaludoEjercicio esMañana={false} nombre={"Santi"} />
   </StrictMode>,
 )

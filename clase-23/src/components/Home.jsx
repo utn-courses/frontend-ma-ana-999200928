@@ -1,9 +1,12 @@
+// hooks de react
+// useState -> para manejar estados
+// useEffect -> para manejar efectos secundarios
 import { useState, useEffect } from "react"
 
 // un estado es una varible QUE CUANDO SE ACUTUALIZA refrezca la ui
 const Home = () => {
   // destructuring
-  const [name, setName] = useState("Mateo")
+  const [name, setName] = useState("")
   const [products, setProducts] = useState([])
 
   // let listOfProducts = []
@@ -30,13 +33,15 @@ const Home = () => {
 
   const handleClick = () => {
     console.log("Hice click en el botón!")
+    // Actualización del estado
     setName("Camila")
   }
 
   return (
     <>
       <main>
-        <h1 className={`${c1} ${c2}`}>Welcome {name}, to the Home Page</h1>
+        {/* Si es verdad que tengo nombre y contenido para mostrar, entonces, muestro el titulo. */}
+        {name && <h1 className={`${c1} ${c2}`}>Welcome {name}, to the Home Page</h1>}
         <button onClick={handleClick}>Cambiar nombre</button>
         <section>
           <p>This is the main content of the home page.</p>

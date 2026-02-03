@@ -176,3 +176,32 @@ footer p {
     grid-template-columns: 1fr;
   }
 }
+
+/* Estilos para el componente Effect */
+
+.data-norris {
+  width: 400px;
+  background-color: rgba(153, 205, 50, 0.433);
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px gray;
+}
+
+.data-norris img {
+  display: block;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.data-norris p {
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.data-norris small {
+  display: block;
+  font-size: 10px;
+  text-align: end;
+  color: gray;
+}

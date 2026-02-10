@@ -8,14 +8,14 @@
   height: 100vh;
   background-color: yellowgreen;
   display: flex;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
 }
 
 aside {
-  background-color: lightblue;
+  background-color: #f0f2f5;
   width: 260px;
   padding: 20px;
-  /* overflow: scroll;
-  overflow-x: hidden; */
   overflow-y: scroll;
 }
 
@@ -25,11 +25,98 @@ section {
 
 /* aside styles */
 
+aside h1 {
+  margin-bottom: 5px;
+}
+
+.search {
+  padding: 8px;
+  margin-bottom: 15px;
+  width: 100%;
+  display: block;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.not-found-text {
+  font-size: 14px;
+  text-align: center;
+  color: gray;
+}
+
+ul {
+  list-style: none;
+}
+
 li {
-  background-color: aliceblue;
   margin-bottom: 10px;
+  display: flex;
+  border-radius: 4px;
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+  cursor: pointer;
+  gap: 10px;
+}
+
+li:hover {
+  background-color: #e6e6e6;
+}
+
+li img {
+  width: 40px;
+  border-radius: 50%;
 }
 
 li small {
   display: block;
+  color: gray;
+}
+
+/* chat styles */
+
+.chat {
+  display: flex;
+  flex-direction: column;
+}
+
+.chat header {
+  border-bottom: 1px solid #ccc;
+  padding: 15px;
+  background-color: #fafafa;
+}
+
+.chat-body {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+
+.message {
+  background-color: yellow;
+  max-width: 400px;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.192);
+  word-wrap: break-word;
+  background-color: #e4e6eb;
+}
+
+.message .timestamp {
+  color: gray;
+  font-size: 12px;
+  text-align: end;
+  margin-top: 5px;
+}
+
+.chat-input {
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.chat-input input {
+  flex: 1;
 }

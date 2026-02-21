@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.app {
+  height: 100vh;
+  background-color: yellowgreen;
+  display: flex;
+  background-color: #f9f9f9;
+}
+
+aside {
+  background-color: #f0f2f5;
+  width: 260px;
+  padding: 20px;
+  overflow-y: scroll;
+}
+
+section {
+  flex: 1;
+}
+
+/* aside styles */
+
+aside h1 {
+  margin-bottom: 5px;
+}
+
+.search {
+  padding: 8px;
+  margin-bottom: 15px;
+  width: 100%;
+  display: block;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.not-found-text {
+  font-size: 14px;
+  text-align: center;
+  color: gray;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin-bottom: 10px;
+  display: flex;
+  border-radius: 4px;
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+  cursor: pointer;
+  gap: 10px;
+}
+
+li:hover {
+  background-color: #e6e6e6;
+}
+
+li img {
+  width: 40px;
+  border-radius: 50%;
+}
+
+li small {
+  display: block;
+  color: gray;
+}
+
+/* chat styles */
+
+.chat {
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-cont-empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chat-cont-empty p {
+  color: gray;
+}
+
+.chat header {
+  border-bottom: 1px solid #ccc;
+  padding: 15px;
+  background-color: #fafafa;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chat header button {
+  padding: 8px 15px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: gray;
+  color: white;
+  cursor: pointer;
+  transition: all .2s;
+}
+
+.chat-body {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+
+.message {
+  background-color: yellow;
+  max-width: 400px;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.192);
+  word-wrap: break-word;
+  background-color: #e4e6eb;
+}
+
+.message .timestamp {
+  color: gray;
+  font-size: 12px;
+  text-align: end;
+  margin-top: 5px;
+}
+
+.received {
+  align-self: flex-start;
+}
+
+.me {
+  background-color: rgb(194, 236, 194);
+  align-self: end;
+  max-width: 400px;
+}
+
+/* input styles */
+
+.chat-input {
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.chat-input input:focus {
+  outline: 1px solid #9c9c9c;
+}
+
+.chat-input button {
+  padding: 8px 15px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: gray;
+  color: white;
+  cursor: pointer;
+  transition: all .2s;
+}
+
+.chat-input button:hover {
+  color: #888888;
+  background-color: white;
+}
+
+/* Not Found styles */
+.cont-not-found {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cont-not-found a {
+  display: block;
+  background-color: rgb(79, 79, 79);
+  padding: 8px 16px;
+  text-decoration: none;
+  color: white;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.cont-not-found a:hover {
+  background-color: rgb(123, 123, 123);
+}
+
+/* login styles */
+
+/* Login styles */
+
+section form {
+  max-width: 360px;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background-color: #ffffff;
+  padding: 24px;
+  border-radius: 6px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.08);
+}
+
+section .title-login {
+  text-align: center;
+  margin-top: 60px;
+  font-weight: 500;
+}
+
+section form input {
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+section form input:focus {
+  outline: 1px solid #9c9c9c;
+}
+
+section form button {
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: gray;
+  color: white;
+  cursor: pointer;
+  transition: all .2s;
+}
+
+section form button:hover {
+  background-color: white;
+  color: #888888;
+}
+
+.error-form {
+  text-align: center;
+  color: rgb(216, 26, 26);
+  font-size: 15px;
+}
+
+@media (max-width: 880px) {
+  aside {
+    display: none;
+  }
+}
